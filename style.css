@@ -1,0 +1,239 @@
+body{
+    background-color: rgb(255, 237, 228);
+    background-image: linear-gradient(to bottom, rgb(247, 212, 212),transparent 20%);
+
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* navbar */
+
+#navbar{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+#nav-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(177, 94, 94);
+}
+
+.break-line{
+    border-top: 1px solid rgb(177, 94, 94);
+    width: 100%;
+    max-width: 1000px;
+    margin-top: -30px;
+
+}
+
+#navbar > .break-line:nth-last-of-type(1){
+    margin-bottom: -2px;
+}
+
+#navbar > .break-line:nth-last-of-type(2){
+    margin-top: -2px;
+}
+
+/* ============================ */
+
+main{
+    margin-bottom: 190px;
+}
+
+/* img section */
+
+main #img-sec{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 0.25fr);
+}
+
+#img-sec .display-img:nth-child(5) {
+    margin-top: 13px;
+  }
+  
+
+.display-img{
+    width:350px;
+    object-fit: cover;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.display-img {
+    transition: all .15s ease-in;
+  }
+  
+  .display-img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  /* =========================== */
+
+  /* About Section */
+
+.text-background{
+    margin-top: 50px;
+    background-color: rgb(233, 198, 195);
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+#about-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text-area{
+    margin-left: -80px;
+}
+
+.small-text{
+    color: rgb(177, 94, 94);
+}
+
+#about-me-text{
+    max-width: 500px;
+    color: rgb(134, 56, 56);
+    margin-bottom: 20px;
+}
+
+.text-title{
+    color: rgb(146, 69, 69);
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h4{
+    margin-top: 0;
+}
+
+#about-me-text{
+    font-size: 1.3rem;
+    word-spacing: 5px;
+}
+
+/* ======================= */
+
+/* Works Section */
+
+#works{
+    margin: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(177, 94, 94);
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+#project-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+
+.project-img-container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fade{
+    position: absolute;
+    width: 450px;
+    height: 170px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),transparent);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease, opacity 0.3s;
+}
+
+.project-img-container:hover .fade{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-img{
+    width: 450px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.overlay-text{
+    position: absolute;
+    color: rgb(255, 249, 248);
+    font-size: 2.15rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-spacing: 10px;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 90px;
+    transition: opacity 0.3s, visibility 0.3s,margin-top 0.3s; 
+}
+
+.project-img-container:hover .overlay-text {
+    opacity: 1; /* Show on hover */
+    visibility: visible; /* Show on hover */
+    margin-top: 0%;
+}
+
+
+/* ============== */
+
+/* end of main */
+
+/* footer */
+
+#footer-container{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(233, 198, 195);
+}
