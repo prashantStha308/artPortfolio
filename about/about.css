@@ -120,6 +120,10 @@ padding-bottom: 20px;
     justify-content: center;
 }
 
+#text-contain{
+    color: rgb(177, 94, 94);
+    margin: 50px;
+}
 
 #icon-container{
     width: 250px;
