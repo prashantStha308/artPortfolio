@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body{
     background-color: rgb(255, 237, 228);
     background-image: linear-gradient(to bottom, rgb(247, 212, 212),transparent 20%);
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
+    font-family: "Open Sans",sans-serif;
 }
+
 
 a{
     text-decoration: none;
@@ -21,11 +26,7 @@ a{
     padding: 0%;
 }
 
-#nav-list{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 
 ul{
     list-style: none;
@@ -92,7 +93,7 @@ h1{
 }
 
 #text-about{
-    width: 500px;
+    width: 700px;
     font-size: 1.2rem;
     color: rgb(177, 94, 94);
     margin-bottom: 30px;
@@ -137,7 +138,7 @@ h1{
 }
 
 #icon-container{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
 }

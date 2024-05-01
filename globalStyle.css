@@ -1,0 +1,18 @@
+
+ .nav-link{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    transition: font-weight 0.15s ease-in-out;
+} 
+    
+.nav-link.be-bold {
+    font-weight: 700;
+    transition: font-weight 0.15s ease-in-out;
+}
+.nav-link.be-normal {
+    font-weight: normal;
+    transition: font-weight 0.15s ease-in-out;
+}
+

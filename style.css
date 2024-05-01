@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body{
     background-color: rgb(255, 237, 228);
     background-image: linear-gradient(to bottom, rgb(247, 212, 212),transparent 20%);
-
     padding: 0;
     margin: 0;
+    font-family: "Open Sans",sans-serif;
 }
 
 a{
@@ -21,11 +24,7 @@ a{
     padding: 0%;
 }
 
-#nav-list{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 
 ul{
     list-style: none;
@@ -233,7 +232,32 @@ h4{
 /* footer */
 
 #footer-container{
-    height: 400px;
-    width: 100%;
+    width: 98%;
+    min-height: 90px;
     background-color: rgb(233, 198, 195);
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+#text-contain{
+    color: rgb(177, 94, 94);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+#icon-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-icon{
+    width: 40px;
+}
+
+.icon{
+    width: 50px;
 }
