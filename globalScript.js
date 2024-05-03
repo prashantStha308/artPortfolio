@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function(){
         });
 
         nav[i].addEventListener('mouseleave',function(){
-            this.classList.remove('be-bold').add('be-normal');
+            this.classList.remove('be-bold');
         })
     }
 });
