@@ -66,8 +66,62 @@ main{
     min-height: 180px;
 }
 
+#text-section{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#title-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container>h1{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: rgb(146, 69, 69);
+}
+
+#text-para-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 50vw;
+    font-size: 1.3rem;
+    color: rgb(177, 94, 94);
+}
 
 
+#image-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    width: 100vw;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+#art-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+.display-img{
+    width: 360px;
+    border-radius: 10px;
+    transition: all 0.15s;
+}
+
+.display-img:hover{
+    transform: scale(1.05);
+}
 
 
 /* ============== */
