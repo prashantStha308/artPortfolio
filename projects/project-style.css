@@ -83,11 +83,36 @@ main{
     color: rgb(177, 94, 94);
 }
 
-.container{
-    width: 100%;
+
+#text-section{
     display: grid;
     justify-content: center;
-    margin-bottom: 10px;
+    justify-items: center;
+}
+
+
+#container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#container>h1{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: rgb(146, 69, 69);
+}
+
+#text-para-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 50vw;
+    font-size: 1.3rem;
+    color: rgb(177, 94, 94);
+    text-align: center;
 }
 
 
