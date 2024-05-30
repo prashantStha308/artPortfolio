@@ -12,6 +12,7 @@ body{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 /* navbar */
@@ -62,16 +63,109 @@ ul{
 /* ============================ */
 /* End of Header */
 
+/* Beginning of main */
+
+main{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#main-text-section{
+    display: grid;
+    justify-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#title-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-title{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: rgb(146, 69, 69);
+}
+
+#text-para-container{
+    width: 800px;
+    height: auto;
+    font-size: 1.2rem;
+    color: rgb(177, 94, 94);
+}
+
+/* Image Section */
+
+#img-container{
+    display: grid;
+    justify-items: center;
+    border: 1px solid red;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 740px;
+    margin: 20px 0px 20px 0px;
+}
+
+#service-image-container-fade{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#fade{
+    position: absolute;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),transparent);
+    width: 350px;
+    height: 400px;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s ease , opacity 0.3s;
+}
+
+#service-image-container-fade:hover #fade{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 100%;
+    word-spacing: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#service-image-container-fade:hover .overlay-text{
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.service-img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
 
 
+/* End of Image Section */
 
-
-
-
-
-
+/* ================================= */
+/* End of Main */
 
 /* footer */
 
