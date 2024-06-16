@@ -129,3 +129,37 @@ main{
 
 /* ================================= */
 /* End of Main */
+
+/* footer */
+
+#footer-container{
+    width: 98%;
+    min-height: 90px;
+    background-color: rgb(233, 198, 195);
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+#text-contain{
+    color: rgb(177, 94, 94);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+#icon-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-icon{
+    width: 40px;
+}
+
+.icon{
+    width: 50px;
+}
+/* End of Footer */
