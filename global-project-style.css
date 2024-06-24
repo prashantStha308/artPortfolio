@@ -1,0 +1,76 @@
+#project-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-section > #text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-text{
+    font-size: 3rem;
+    color: rgb(146, 69, 69);;
+}
+
+
+#project-img-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 20px 0px 40px 0px;
+}
+
+.project-img{
+    width: 450px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-img-container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;   
+    justify-items: center;
+    align-content: center;
+}
+
+.fade{
+    position: absolute;
+    width: 450px;
+    height: 170px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),transparent);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease, opacity 0.3s;
+}
+
+.project-img-container:hover .fade{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-text{
+    position: absolute;
+    color: rgb(255, 249, 248);
+    font-size: 2.15rem;
+    font-weight: bold;
+    left: 30%;
+    right: 50%;
+    visibility: hidden;
+    opacity: 0;
+    word-spacing: 10px;
+    margin-top: 90px;
+    transition: all 0.3s ease;
+}
+
+.project-img-container:hover .overlay-text {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0%;
+}
+

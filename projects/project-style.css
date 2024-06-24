@@ -151,7 +151,6 @@ main{
     height: 170px;
     object-fit: cover;
     border-radius: 5px;
-
 }
 
 .overlay-text{
@@ -174,10 +173,6 @@ main{
     visibility: visible; /* Show on hover */
     margin-top: 0%;
 }
-
-
-
-
 
 
 
